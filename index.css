@@ -15,8 +15,8 @@
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0em;
+  padding: 0em;
   box-sizing: border-box;
 }
 
@@ -91,7 +91,7 @@ body {
 
 .card-category ul,
 .card-category ol {
-  margin-left: 20px;
+  margin-inline-start: 20px;
 }
 
 .card-category li {
