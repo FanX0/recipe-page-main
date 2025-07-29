@@ -33,7 +33,7 @@ body {
 
 .card {
   width: 100%;
-  max-width: 610px;
+  max-width: 38em;
   background-color: var(--color-White);
 
   overflow: hidden; /* Prevents the content from spilling out */
