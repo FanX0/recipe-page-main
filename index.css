@@ -1,0 +1,125 @@
+:root {
+  /* fonts */
+  --font-family-Young: "Young Serif", serif;
+  --font-family-Outfit: "Outfit", sans-serif;
+
+  /* colors */
+  --color-White: hsl(0, 0%, 100%);
+  --color-Stone-100: hsl(30, 54%, 90%);
+  --color-Stone-150: hsl(30, 18%, 87%);
+  --color-Stone-600: hsl(30, 10%, 34%);
+  --color-Stone-900: hsl(24, 5%, 18%);
+  --color-Brown-800: hsl(14, 45%, 36%);
+  --color-Rose-800: hsl(332, 51%, 32%);
+  --color-Rose-50: hsl(330, 100%, 98%);
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--color-Stone-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-Outfit);
+    font-weight: 400;
+    margin: 100px 0px;
+  }
+  @media (max-width: 768px) {
+    body {
+      margin: 0px;
+    }
+    .card {
+      border-radius: 0px !important;
+    }
+    .card img {
+      border-radius: 0px !important;
+      padding: 0px !important;
+      height: 250px !important;
+    }
+  }
+  .card {
+    width: 610px;
+    background-color: var(--color-White);
+
+    border-radius: 20px;
+  }
+  .card-content {
+    padding: 24px;
+  }
+  .card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 40px;
+    padding: 24px;
+  }
+  .card h1 {
+    font-family: var(--font-family-Young);
+    font-weight: 400;
+    margin: 16px 0px 16px 0px;
+  }
+  .card-description {
+    font-size: 14px;
+    margin: 14px 0px;
+  }
+
+  .card-preparation {
+    width: 100%;
+    background-color: var(--color-Rose-50);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .card-preparation p {
+    color: var(--color-Rose-800);
+    font-weight: 600;
+  }
+
+  .card-preparation ul {
+    margin-left: 10px;
+  }
+
+  .card-preparation li {
+    margin: 10px;
+    font-size: 14px;
+  }
+  .card-preparation li span {
+    font-weight: 600;
+  }
+  .card-category {
+    margin: 20px 0px 20px 0px;
+  }
+  .card-category ul {
+    margin-left: 20px;
+  }
+  .card-category ol {
+    margin-left: 20px;
+  }
+  .card-category li {
+    margin: 10px;
+    font-size: 14px;
+  }
+  .card-category li span {
+    font-weight: 600;
+  }
+
+  .card-title {
+    font-size: 21px;
+    font-family: var(--font-family-Young);
+    font-weight: 400;
+
+    color: var(--color-Brown-800);
+  }
+  hr {
+    margin: 15px 0;
+    border-color: var(--color-Stone-100);
+  }
+
+  .card-nutrition-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    grid-gap: 20px; /* Space between grid items */
+  }
+}
