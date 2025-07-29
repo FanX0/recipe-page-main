@@ -27,7 +27,7 @@
     font-weight: 400;
     margin: 100px 0px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 48em) {
     body {
       margin: 0px;
     }
@@ -78,7 +78,7 @@
   }
 
   .card-preparation ul {
-    margin-left: 10px;
+    margin-inline-start: 20px;
   }
 
   .card-preparation li {
