@@ -15,8 +15,8 @@
 }
 
 * {
-  margin: 0em;
-  padding: 0em;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -33,14 +33,13 @@ body {
 
 .card {
   width: 100%;
-  max-width: 38em;
+  max-width: 38rem;
   background-color: var(--color-White);
-
-  overflow: hidden; /* Prevents the content from spilling out */
+  overflow: hidden;
 }
 
 .card-content {
-  padding: 16px;
+  padding: 1rem;
 }
 
 .card img {
@@ -51,19 +50,19 @@ body {
 .card h1 {
   font-family: var(--font-family-Young);
   font-weight: 400;
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 .card-description {
-  font-size: 14px;
-  margin: 14px 0;
+  font-size: 0.875rem;
+  margin: 0.875rem 0;
 }
 
 .card-preparation {
   width: 100%;
   background-color: var(--color-Rose-50);
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
 }
 
 .card-preparation p {
@@ -73,12 +72,12 @@ body {
 
 .card-preparation ul,
 .card-preparation ol {
-  margin-inline-start: 20px;
+  margin-inline-start: 1.25rem;
 }
 
 .card-preparation li {
-  margin: 10px 0;
-  font-size: 14px;
+  margin: 0.625rem 0;
+  font-size: 0.875rem;
 }
 
 .card-preparation li span {
@@ -86,17 +85,17 @@ body {
 }
 
 .card-category {
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .card-category ul,
 .card-category ol {
-  margin-inline-start: 20px;
+  margin-inline-start: 1.25rem;
 }
 
 .card-category li {
-  margin: 10px 0;
-  font-size: 14px;
+  margin: 0.625rem 0;
+  font-size: 0.875rem;
 }
 
 .card-category li span {
@@ -104,40 +103,40 @@ body {
 }
 
 .card-title {
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-family: var(--font-family-Young);
   font-weight: 400;
   color: var(--color-Brown-800);
 }
 
 hr {
-  margin: 15px 0;
+  margin: 0.9375rem 0;
   border-color: var(--color-Stone-100);
 }
 
 .card-nutrition-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 /* Tablet and above */
 @media (min-width: 48em) {
   body {
-    margin: 100px 0;
+    margin: 6.25rem 0;
   }
 
   .card {
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 
   .card img {
-    border-radius: 40px;
-    height: 300px;
-    padding: 16px;
+    border-radius: 2.5rem;
+    height: 18.75rem;
+    padding: 1rem;
   }
 
   .card-preparation p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
